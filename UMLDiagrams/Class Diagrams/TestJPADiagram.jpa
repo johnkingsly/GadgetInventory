@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jpa:entity-mappings jaxb-support="false" id="_14442383493421" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" xmlns:ns4="http://nbmodeler.java.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <jpa:entity jaxb-root-element="false" static-metamodel="false" abstract="false" class="Category" visibile="true" minimized="false" id="_1444238361762">
+        <jpa:attributes>
+            <jpa:id name="ID" attribute-type="Long" visibile="true" id="_14442383710735">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true"/>
+                <jpa:generated-value/>
+            </jpa:id>
+            <jpa:basic name="Name" attribute-type="String" visibile="true" id="_14442384017146">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:basic>
+        </jpa:attributes>
+    </jpa:entity>
+    <jpa:diagram id="_14442383493432">
+        <plane elementRef="_14442383493421" id="_14442383493453_p">
+            <shape elementRef="_1444238361762" id="_1444238361762_gui">
+                <Bounds x="374.0" y="90.0" width="147.0" height="92.0"/>
+            </shape>
+        </plane>
+    </jpa:diagram>
+</jpa:entity-mappings>
