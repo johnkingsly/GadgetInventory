@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <jpa:entity-mappings jaxb-support="false" id="_14442383493421" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" xmlns:ns4="http://nbmodeler.java.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <jpa:entity jaxb-root-element="false" static-metamodel="false" abstract="false" class="Category" visibile="true" minimized="false" id="_1444238361762">
+    <jpa:entity jaxb-root-element="false" static-metamodel="false" abstract="false" class="Type" visibile="true" minimized="false" id="_1444238361762">
         <jpa:attributes>
             <jpa:id name="ID" attribute-type="Long" visibile="true" id="_14442383710735">
                 <jpa:column unique="false" nullable="true" insertable="true" updatable="true"/>
@@ -9,12 +9,43 @@
             <jpa:basic name="Name" attribute-type="String" visibile="true" id="_14442384017146">
                 <jpa:column unique="false" nullable="true" insertable="true" updatable="true"/>
             </jpa:basic>
+            <jpa:basic name="description" attribute-type="String" visibile="true" id="_14442391032847">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:basic>
+        </jpa:attributes>
+    </jpa:entity>
+    <jpa:entity jaxb-root-element="false" static-metamodel="false" abstract="false" class="Item" visibile="true" minimized="false" id="_1444239160345">
+        <jpa:attributes>
+            <jpa:id name="ID" attribute-type="Long" visibile="true" id="_14442392459859">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true"/>
+                <jpa:generated-value/>
+            </jpa:id>
+            <jpa:basic name="mfrID" attribute-type="String" visibile="true" id="_144423935331811">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:basic>
+            <jpa:basic name="dateOfPurchase" attribute-type="java.sql.Timestamp" visibile="true" id="_144423940101512">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:basic>
+            <jpa:basic name="price" attribute-type="double" visibile="true" id="_144423946316813">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:basic>
+            <jpa:element-collection name="TypeID" target-class="Long" collection-type="java.util.Collection" visibile="true" id="_144423928526110">
+                <jpa:collection-table name="Type">
+                    <jpa:join-column name="x" referenced-column-name="y" unique="false" nullable="true" insertable="true" updatable="true" column-definition="" table="Type"/>
+                </jpa:collection-table>
+            </jpa:element-collection>
+            <jpa:element-collection name="pictureID" target-class="String" collection-type="java.util.Collection" visibile="true" id="_144423955304715">
+                <jpa:collection-table/>
+            </jpa:element-collection>
         </jpa:attributes>
     </jpa:entity>
     <jpa:diagram id="_14442383493432">
         <plane elementRef="_14442383493421" id="_14442383493453_p">
             <shape elementRef="_1444238361762" id="_1444238361762_gui">
-                <Bounds x="374.0" y="90.0" width="147.0" height="92.0"/>
+                <Bounds x="380.0" y="153.0" width="128.0" height="113.0"/>
+            </shape>
+            <shape elementRef="_1444239160345" id="_1444239160345_gui">
+                <Bounds x="626.0" y="90.0" width="139.0" height="176.0"/>
             </shape>
         </plane>
     </jpa:diagram>
