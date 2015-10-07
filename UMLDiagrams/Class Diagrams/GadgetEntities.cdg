@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="GadgetEntities">
+  <ClassDiagramComponents>
+    <Class name="Category" package="" visibility="public" xPosition="277.0" yPosition="196.0">
+      <Fields>
+        <Field name="id" type="long" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
